@@ -1,0 +1,14 @@
+Objective
+Learn to simulate blocking work phases (compile, debug, refactor) using usleep and measure elapsed time.
+
+What to implement
+A single thread sleeps for a given duration (ms, passed as argument), then prints actual elapsed time. Run multiple times and compare.
+
+Validation
+Elapsed time is within ±10ms of target. No busy-waiting. Clean exit.
+
+Concepts
+    -usleep
+    -gettimeofday
+    -timing precision
+    -C89
