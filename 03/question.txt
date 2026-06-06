@@ -1,0 +1,14 @@
+Objective
+Practice serialized logging: each log line must be atomic — no interleaved output from concurrent threads.
+
+What to implement
+Each thread logs [timestamp_ms] coder N started and [timestamp_ms] coder N finished. Use a dedicated log mutex. Timestamps come from gettimeofday.
+
+Validation
+No two log lines are interleaved. Timestamps are monotonically non-decreasing within each thread.
+
+Concepts
+    -gettimeofday
+    -log mutex
+    -atomic print
+    -serialization

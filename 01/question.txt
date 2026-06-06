@@ -1,0 +1,14 @@
+Objective
+Understand how pthread_create and pthread_join work. Each thread receives its integer ID as an argument and prints it.
+
+What to implement
+Write a C89 program that takes N as a command-line argument, creates N threads with pthread_create, passes each its index, joins all threads, then exits cleanly.
+
+Validation
+Output shows all N IDs. Program exits with no memory leaks (check with valgrind). No global mutable variables.
+
+Concepts
+    -pthread_create
+    -pthread_join
+    -thread arguments
+    -C89

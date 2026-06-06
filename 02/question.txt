@@ -1,0 +1,14 @@
+Objective
+Observe the data race on a plain counter, then fix it with a mutex. Compare results with and without locking.
+
+What to implement
+N threads each increment a shared counter 10,000 times. First run without mutex (show corruption). Then add pthread_mutex_lock/unlock and verify correctness.
+
+Validation
+Final counter equals N × 10,000 exactly. Valgrind reports no leaks. No global mutex — pass it via a struct.
+
+Concepts
+    -pthread_mutex_t
+    -data race
+    -critical section
+    -heap allocation
